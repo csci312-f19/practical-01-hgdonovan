@@ -28,4 +28,19 @@ describe('Determines age based on birthday', () => {
   test('Returns 0 if birthday is today', () => {
     expect(birthday.howOld(new Date('01 Jan 2018'))).toBe(0);
   });
+
+  test('Returns 0 if birthday is today', () => {
+    expect(birthday.howOld(new Date('01 Jan 2017'))).toBe(1);
+  });
+
+  test('Returns 0 if birthday is today', () => {
+    expect(birthday.howOld(new Date('30 Dec 2016'))).toBe(1);
+  });
+
+  test('Returns 0 if birthday is today', () => {
+    expect(birthday.howOld(new Date('2 Jan 2017'))).toBe(0);
+  });
+
+
+
 });
