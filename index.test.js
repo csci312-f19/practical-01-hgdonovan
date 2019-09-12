@@ -40,7 +40,4 @@ describe('Determines age based on birthday', () => {
   test('Returns 0 if birthday is today', () => {
     expect(birthday.howOld(new Date('2 Jan 2017'))).toBe(0);
   });
-
-
-
 });
